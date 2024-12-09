@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/afc1a109b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class=""logo>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Nandhini</span><br>from Hyderabad</h1>
+            </div>
+        </div>
+    </div>
+<!------------------------------about------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Fresher with a solid foundation in latest technologies. 
+                        Strong time management and team working skills with a 
+                        passion for developing web applications. Aiming to 
+                        contribute in company’s growth.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            
+                            <li><i class="fa-brands fa-java"></i><br><span>Java Programming</span><br>Developing the logics in Java</li><br>
+                            <li><i class="fa-regular fa-file-code"></i><br><span>Web Development</span><br>Designing web interfaces using HTML, CSS and Javascript</li><br>
+                            <li><i class="fa-brands fa-android"></i><br><span>App Development</span><br>Building android apps using Kotlin</li><br>
+                            <li><i class="fa-solid fa-folder-tree"></i><br><span>Data Structures and Algorithms</span><br>All data structures and dfifferent algorithms</li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><i class="fa-solid fa-earth-asia"></i><br><span>Sep 2024 - Current</span><br>Intern at Technologics Global as 
+                                an Application Engineer</li><br>
+                            <li><i class="fa-solid fa-computer"></i><br><span>April 2024 - July 2024</span><br>Android Developer at Google by AICTE</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><i class="fa-solid fa-user-graduate"></i><br><span>2021 - 2025</span><br>BTech in CSE-Cyber Security at MLRIT, Dundigal</li><br>
+                            <li><i class="fa-solid fa-building-columns"></i><br><span>2019 - 2021</span><br>Intermmediate at Sri Chaitanya junior college, Kukatpally</li><br>
+                            <li><i class="fa-solid fa-school"></i><br><span>2019</span><br>Schooling at Montridge School(CBSE), Hyderabad</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------------------------Skills-------------------------------------------------->
+    <div class="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Custom Software Development</h2>
+                    <p>Ddesigning, creating, and deploying 
+                   software tailored to meet the 
+                   specific needs of a particular 
+                   organization or user.</p>
+                    <a href="https://www.leewayhertz.com/what-is-custom-software-development/">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Full-Stack Development</h2>
+                    <p>
+                    Covers both frontend(UI/UX) and backend 
+                    (server-side) development, ensuring 
+                    complete solutions with efficient database 
+                    and interactive user interfaces.
+                    </p>
+                    <a href="https://www.w3schools.com/whatis/whatis_fullstack.asp">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Developer</h2>
+                    <p>
+                    Implements and manages databases for 
+                    organizations. Primary goal is to develop 
+                    database structures that efficiently 
+                    store and manage data. 
+                    </p>
+                    <a href="https://www.revelo.com/blog/database-developer">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!------------------------portfolio--------------------------------->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/w1.jpeg">
+                <div class="layer">
+                    <h3>LSB Steganography</h3>
+                    <p>This interface takes in the secret information from user and transmit securely by hiding it in an image</p>
+                    <a href="https://github.com/nandhini-vadlamudi/steganography"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w2.png">
+                <div class="layer">
+                    <h3>Disease Prediction using ML</h3>
+                    <p>This application uses Machine Learing(ML) algorithms in order to predict multiple diseases in a person through basic details</p>
+                    <a href="https://github.com/nandhini-vadlamudi/disease-prediction"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/w3.png">
+                <div class="layer">
+                    <h3>Tutors bridge</h3>
+                    <p>This interface helps in connecting the qualified tutors to the parents, who are in need of a home tution</p>
+                    <a href="https://github.com/nandhini-vadlamudi/home-tutors-application"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!--------------------contact--------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>nandhinivadlamudi24@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91 8096507477</p>
+                <div class="social-icons">
+                    <a href="http://www.linkedin.com/in/nandhini-vadlamudi"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="http://instagram.com/_nandhini__vadlamudi___"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/nandhini-vadlamudi"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="images/nandhini-ats new.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Nandhini. Made with <i class="fa-solid fa-heart"></i> Tutorials</p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxxMyXZ-zb0u6PI-3Yd6FRrvMM5XBpfMBIcujL8o2kGKjOO146bhmrI-RHNiKXeBIfz7A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
